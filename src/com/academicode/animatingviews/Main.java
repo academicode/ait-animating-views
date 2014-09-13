@@ -50,4 +50,18 @@ public class Main extends Activity {
 		this.tweenAnimation = (ImageView) findViewById(R.id.tweenAnimation);
 		this.frameAnimation = (ImageView) findViewById(R.id.frameAnimation);
 	} 
+	
+	private void ensureVisibility(ImageView image) {
+		
+		if(image == tweenAnimation){
+			
+			frameAnimation.setVisibility(View.GONE);
+			tweenAnimation.setVisibility(View.VISIBLE);
+		}
+		else if(image == frameAnimation){
+			
+			tweenAnimation.setVisibility(View.GONE);
+			frameAnimation.setVisibility(View.VISIBLE);
+		}
+	}
 }
