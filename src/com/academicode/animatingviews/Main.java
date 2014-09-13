@@ -1,13 +1,13 @@
 package com.academicode.animatingviews;
 
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
 
-public class Main extends ActionBarActivity {
+public class Main extends Activity {
 
 	private Button startFrameAnimation;
 	private Button startTweenAnimation;
