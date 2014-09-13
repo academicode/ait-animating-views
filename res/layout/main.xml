@@ -8,9 +8,41 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.academicode.animatingviews.Main" >
 
-    <TextView
+    <Button
+        android:id="@+id/startFrame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignLeft="@+id/startTween"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/startTween"
+        android:text="Frame Animation" />
+
+    <Button
+        android:id="@+id/startTween"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/startFrame"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="'Tween Animation" />
+
+    <ImageView
+        android:id="@+id/tweenAnimation"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/startTween"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="75dp"
+        android:visibility="gone"
+        android:src="@drawable/iteration_5" />
+
+    <ImageView
+        android:id="@+id/frameAnimation"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/startTween"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_marginBottom="75dp"/>
 
 </RelativeLayout>
